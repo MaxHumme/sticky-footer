@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A CSS Sticky Footer</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" type="text/css" href="sticky-footer.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+  </head>
+  <body>
+    <div id="page">
+      <div class="wrapper">
+        <h1>A CSS Sticky Footer</h1>
+        <p>This is a page with a sticky footer consisting only of CSS and HTML.</p>
+        <p>It is glued to the bottom of the page, but stays below the content when the browser window is not high enough to show both the page and the footer.</p>
+        <p>See it at work by resizing the height of browser window.</p>
+        <p>The framework of the page consists of a 'page' div and a 'footer' div. Both divs have only one child div with class 'wrapper' with a top padding or top border of at least 1px to stop the top margins of nested elements from collapsing with the content and footer divs.</p>
+        <p>The page div is aqua colored, the footer div dark aqua. The nested wrapper div of the page div is blue, the nested wrapper div of the footer dark blue.</p>
+        <p>It is tested in all major browsers on Mac, PC and iOS. If it doesn't work in a certain browser on a certain system, it will be fixed.</p>
+        <p>See sticky-footer.css for the technical stuff.</p>
+      </div>
+      <div id="footer-push"></div>
+    </div>
+    <div id="footer">
+      <div class="wrapper">
+        <p>This is the sticky footer at work!</p>
+      </div>
+    </div>
+  </body>
+</html>
