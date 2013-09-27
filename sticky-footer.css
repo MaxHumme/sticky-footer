@@ -1,0 +1,26 @@
+html {
+  height: 100%; /* set html height to 100% to make certain it covers the whole page height */
+}
+
+body {
+  height: 100%; /* set body height to 100% to make certain it covers the whole page height */
+  margin: 0; /* (re)set body margin to 0 because most browsers set a margin on the body if it's not specified. it keeps the former css rule true (margins are not added to height) */
+}
+
+#page {
+  margin-bottom: -4em; /* set page margin bottom to minus the box height of the footer div. this gives space to the footer div 'within' the 100% height of the page div (the footer div overlays the bottom part of the page div because the page div box height is exactly the height of the footer div box smaller) */
+  min-height: 100%; /* set page min-height to 100% to make sure it doesn't resize below that and is allowed to be bigger than just it's content when the browser window is larger in height so body and html height are larger too */
+}
+
+#page div.wrapper {
+  padding: 1em 0; /* set some padding to the page wrapper to stop margins from child elements from collapsing with the page wrapper div */
+}
+
+#footer-push {
+  height: 4em; /* set footer-push height to the box height of the footer div to enlarge the 100% height of the page div to 'push' the footer below the content of that div so it doesn't overlay it anymore, and the bottom of the footer div and the bottom of the of the page div align exactly  */
+}
+
+#footer div.wrapper {
+  padding: 0.5em 0; /* set some padding to the footer wrapper div to stop margins from child elements from collapsing with the footer wrapper div */
+  height: 3em; /* set the height of the footer wrapper to be able to match the page div margin-bottom with the total footer box height (height + top-padding + bottom-padding) */
+}
