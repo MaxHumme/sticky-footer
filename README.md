@@ -1,7 +1,7 @@
 sticky-footer
 =============
 
-Basic files to create a css sticky footer on a web page.
+A pure CSS/HTML sticky footer for any web page.
 
 This sticky footer consists only of CSS and HTML. It is glued to the bottom of the page, but stays below the content when the browser window is not high enough to show both the page and the footer.
 
